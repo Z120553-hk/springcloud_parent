@@ -1,0 +1,15 @@
+server:
+  port: 5001
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://127.0.0.1:6001/eureka/
+  instance:
+    instance-id: consumer-user
+    prefer-ip-address: true     #访问路径可以显示IP地址
+spring:
+  application:
+    name: consumer-user
+
